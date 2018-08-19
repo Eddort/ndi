@@ -2,7 +2,11 @@
 	"defaultSeverity": "error",
 	"jsRules": {},
 	"rules": {
-		"indent": [true, "tabs", 4]
+		"indent": [true, "tabs", 4],
+		"arrow-parens": false,
+		"trailing-comma": false,
+		"ordered-imports": false,
+		"object-literal-sort-keys":false
 	},
 	"rulesDirectory": [],
 	"extends": ["tslint:recommended"]

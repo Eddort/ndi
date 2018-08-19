@@ -1,31 +1,30 @@
 {
-  "name": "ts-boilerplate",
-  "version": "1.0.0",
+  "name": "ndi",
+  "version": "0.0.1",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "start": "supervisor --no-restart-on error build/index.js",
-    "dev": "npm-run-all --parallel build:watch start",
     "build": "tsc",
-    "build:watch": "tsc --watch --preserveWatchOutput"
+    "build:watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eddort/ts-boilerplate.git"
+    "url": "git+https://github.com/Eddort/ndi.git"
   },
   "keywords": [
-    "ts",
-    "typescript",
-    "boilerplate",
-    "ts-boilerplate"
+	"ndi",
+	"di",
+	"nodejs di",
+	"dependency injection",
+	"nodejs dependency injection"
   ],
   "author": "Eddort",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Eddort/ts-boilerplate/issues"
+    "url": "https://github.com/Eddort/ndi/issues"
   },
-  "homepage": "https://github.com/Eddort/ts-boilerplate#readme",
+  "homepage": "https://github.com/Eddort/ndi#readme",
   "devDependencies": {
     "@types/jest": "^23.3.0",
     "jest": "^23.4.1",
