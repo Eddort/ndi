@@ -1,8 +1,8 @@
-import { INdi, IObject } from "./structures";
+import { IObject } from "./structures";
 import { protectSet } from "./decorators";
 import { EventEmitter } from "events";
 
-class Ndi extends EventEmitter implements INdi {
+class Ndi extends EventEmitter {
 	public config: object;
 	public logger: (s: any) => void;
 	private cache: IObject;
