@@ -1,12 +1,14 @@
 import { INdi, IObject } from "./structures";
 import { protectSet } from "./decorators";
+import { EventEmitter } from "events";
 
-class Ndi implements INdi {
+class Ndi extends EventEmitter implements INdi {
 	public config: object;
 	public logger: (s: any) => void;
 	private cache: IObject;
 	private state: IObject;
 	constructor(config: object, logger: (s: any) => void) {
+		super();
 		this.config = config;
 		this.logger = logger;
 		this.cache = {};

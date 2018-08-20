@@ -46,3 +46,10 @@ it("toObject method", () => {
 it("toLazyObject method", () => {
 	const lazyObject = ndi.toLazyObject();
 });
+
+it("test eventemmiter", () => {
+	let isFire = false;
+	ndi.on("fire", () => isFire = true);
+	ndi.emit("fire");
+	expect(isFire).toEqual(true);
+});

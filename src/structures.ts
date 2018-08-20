@@ -1,4 +1,6 @@
-export interface INdi {
+import { EventEmitter } from "events";
+
+export interface INdi extends EventEmitter {
 	config: IObject;
 	logger: (s: any) => void;
 	toObject(): object;
