@@ -3,7 +3,7 @@ import { protectSet } from "./decorators";
 import { EventEmitter } from "events";
 
 class Ndi extends EventEmitter {
-	public config: object;
+	public config: IObject;
 	public logger: (s: any) => void;
 	private cache: IObject;
 	private state: IObject;

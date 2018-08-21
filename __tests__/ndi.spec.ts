@@ -1,10 +1,9 @@
 import Ndi from "../src";
-import { INdi } from "../src/structures";
 
 const logger = s => {
 	process.stdout.write(s + "\n");
 };
-let ndi: INdi;
+let ndi: Ndi;
 
 it("create instance", () => {
 	ndi = new Ndi(
